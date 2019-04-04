@@ -57,7 +57,7 @@
 // } 
 
 
-//////////////////	Step 8	and Step 9 //////////////////
+//////////////////	Step 8 //////////////////
 //function init() {
 //    "use strict";
 //    var btnLink = window.document.getElementById("newPage");
