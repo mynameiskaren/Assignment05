@@ -29,21 +29,26 @@
 //}
 
 //////////////////	Step 4	//////////////////
-//document.getElementById("clickMe").addEventListener("click", function(){
-//    window.alert("Step 4 - I have been clicked");
-//});
-
+//window.onload = function(){
+//    document.getElementById("clickMe").addEventListener("click", function(){
+//        window.alert("Step 4 - I have been clicked");
+//    });
+//}
 
 //////////////////	Step 5	//////////////////
 // On HTML Page
 
 
 //////////////////	Step 6	//////////////////
-//document.getElementById("redirect").addEventListener("click", function(){
-//	window.alert("Step 6 - You are redirecting to a new page.");
-//	event.preventDefault();
-//});
-
+//function init() {
+//    "use strict";
+//    var link = window.document.getElementById("redirect");
+//    link.addEventListener("click", function (e) {
+//        e.preventDefault();
+//        window.alert("You clicked the link. Preventing Redirection.");
+//    });
+//}
+//window.addEventListener("load", init);
 
 //////////////////	Step 7	//////////////////
 //function myfunction() { 
@@ -53,18 +58,31 @@
 
 
 //////////////////	Step 8	and Step 9 //////////////////
-//function myFunction() {
-//    var myWindow = window.open("newpage.html", "New Page", "width=300,height=300");
+//function init() {
+//    "use strict";
+//    var btnLink = window.document.getElementById("newPage");
+//    btnLink.addEventListener("click", function () {
+//        window.open("newpage.html", "newPage", "width=300,height=300");
+//    });
 //}
-//function start(){
-//	timer = setInterval(function(){ 
-//		document.getElementById("write").innerHTML += "Learning Javascript is fun!<br>"; 
-//	}, 2000);
+//window.addEventListener("load", init);
+
+
+//////////////////   Step 9 //////////////////
+//window.addEventListener("load", init, false);
+//function init() {
+//    "use strict";
+//    startButton.addEventListener("click", function theText() {
+//        "use strict";
+//        var freeze = setInterval(theText, 2000);
+//        window.console.log("Learning JavaScript is fun!");
+//        
+//    stopButton.addEventListener("click", function theText() {
+//        window.clearInterval(freeze);
+//    });    
+//}, false);
 //}
-//function stop(){
-//	clearInterval(timer);
-//
-//}
+
 
 //////////////////	Step 10	//////////////////
 //function display() {
