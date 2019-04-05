@@ -6,6 +6,39 @@
     <script src="js/employee-management.js"></script>
 </head>
 <body>
-    
+    <main>
+        <div class="app">
+            <h4>Add Employee</h4>
+            <form novalidate>
+                <div>
+                    <label for="name">Name:</label>
+                    <input id="name" type="text">
+                    <span class="error" id="nameError"> </span>
+                </div>
+                <div>
+                    <label for="title">Title:</label>
+                    <input id="title" type="text">
+                    <span class="error" id="jobError"> </span>
+                </div>
+                <div>
+                    <label for="entension">Extension:</label>
+                    <input id="extension" type="text">
+                    <span class="error" id="extError"> </span>
+                </div>
+            </form>
+
+            <input type="submit" id="enter" value='Enter'>
+            <hr>
+            <h4>Showing <span id="totalEmployees"> </span> Employees:</h4>
+            <table id="table">
+                <tr>
+                    <th>________Name________</th>
+                    <th>______Title______</th>
+                    <th>__Ext. __</th>
+                    
+                </tr>
+            </table>
+        </div>
+    </main>
 </body>
 </html>
